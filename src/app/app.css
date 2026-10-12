@@ -1,0 +1,18 @@
+app-hero,
+app-about,
+app-portfolio,
+app-contact,
+app-footer {
+  display: block;
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  app-hero,
+  app-about,
+  app-portfolio,
+  app-contact,
+  app-footer {
+    margin-left: 0;
+  }
+}

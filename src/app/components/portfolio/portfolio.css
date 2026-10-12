@@ -1,0 +1,27 @@
+.portfolio-content {
+  overflow: hidden;
+}
+
+.portfolio-content img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-info h3 {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.portfolio-info p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.portfolio-content:focus-within .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio-content .preview-link:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}

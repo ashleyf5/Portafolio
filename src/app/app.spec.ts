@@ -14,10 +14,15 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render the one-page portfolio sections', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mi-portafolio');
+    expect(compiled.querySelector('app-header')).toBeTruthy();
+    expect(compiled.querySelector('#hero')).toBeTruthy();
+    expect(compiled.querySelector('#about')).toBeTruthy();
+    expect(compiled.querySelector('#portfolio')).toBeTruthy();
+    expect(compiled.querySelector('#contact')).toBeTruthy();
+    expect(compiled.querySelector('#footer')).toBeTruthy();
   });
 });

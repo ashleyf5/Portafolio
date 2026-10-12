@@ -1,0 +1,9 @@
+.contact .info-wrap,
+.contact .php-email-form {
+  height: 100%;
+}
+
+.contact .php-email-form h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}

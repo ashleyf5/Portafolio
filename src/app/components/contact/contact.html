@@ -1,0 +1,32 @@
+<section id="contact" class="contact section">
+  <div class="container section-title">
+    <h2>Contacto</h2>
+    <p>¿Tienes una idea o un proyecto en mente? Me encantará conocerlo.</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5">
+        <div class="info-wrap h-100">
+          <div class="info-item d-flex align-items-start">
+            <i class="bi bi-envelope flex-shrink-0" aria-hidden="true"></i>
+            <div>
+              <h3>Correo electrónico</h3>
+              <p><a [href]="'mailto:' + contactEmail">{{ contactEmail }}</a></p>
+            </div>
+          </div>
+          <p class="mb-0">Reemplaza este correo por tu dirección de contacto para recibir mensajes desde tu portafolio.</p>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="php-email-form d-flex flex-column justify-content-center">
+          <h3>Hablemos de tu próximo proyecto</h3>
+          <p>Escríbeme por correo y cuéntame qué tienes en mente.</p>
+          <a class="btn btn-primary align-self-start" [href]="'mailto:' + contactEmail">
+            Enviar un correo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

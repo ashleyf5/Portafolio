@@ -1,0 +1,36 @@
+<header
+  id="header"
+  class="header d-flex flex-column"
+  [class.header-show]="menuOpen()"
+>
+  <div class="profile">
+    <a class="logo d-flex align-items-center justify-content-center" href="#hero" (click)="closeMenu()">
+      <h1 class="sitename">Ashly</h1>
+    </a>
+    <p class="text-center mb-3">Desarrolladora web</p>
+  </div>
+
+  <nav id="navmenu" class="navmenu" aria-label="Navegación principal">
+    <ul>
+      <li><a href="#hero" (click)="closeMenu()"><i class="bi bi-house navicon" aria-hidden="true"></i> Inicio</a></li>
+      <li><a href="#about" (click)="closeMenu()"><i class="bi bi-person navicon" aria-hidden="true"></i> Sobre mí</a></li>
+      <li><a href="#portfolio" (click)="closeMenu()"><i class="bi bi-images navicon" aria-hidden="true"></i> Portafolio</a></li>
+      <li><a href="#contact" (click)="closeMenu()"><i class="bi bi-envelope navicon" aria-hidden="true"></i> Contacto</a></li>
+    </ul>
+  </nav>
+
+  <button
+    class="header-toggle d-xl-none"
+    type="button"
+    aria-label="Abrir o cerrar menú"
+    aria-controls="navmenu"
+    [attr.aria-expanded]="menuOpen()"
+    (click)="menuOpen.update((open) => !open)"
+  >
+    @if (menuOpen()) {
+      <i class="bi bi-x" aria-hidden="true"></i>
+    } @else {
+      <i class="bi bi-list" aria-hidden="true"></i>
+    }
+  </button>
+</header>

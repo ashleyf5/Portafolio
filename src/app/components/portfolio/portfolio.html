@@ -1,0 +1,36 @@
+<section id="portfolio" class="portfolio section light-background">
+  <div class="container section-title">
+    <h2>Portafolio</h2>
+    <p>Una selección de proyectos y exploraciones digitales.</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+      @for (project of projects; track project.image) {
+        <div class="col-lg-4 col-md-6">
+          <article class="portfolio-content h-100">
+            <img
+              [ngSrc]="project.image"
+              [width]="project.width"
+              [height]="project.height"
+              sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw"
+              class="img-fluid"
+              [alt]="project.title"
+            >
+            <div class="portfolio-info">
+              <h3>{{ project.title }}</h3>
+              <p>{{ project.category }} · {{ project.description }}</p>
+              <a
+                class="preview-link"
+                [href]="project.image"
+                [attr.aria-label]="'Abrir imagen del proyecto ' + project.title"
+              >
+                <i class="bi bi-zoom-in" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      }
+    </div>
+  </div>
+</section>

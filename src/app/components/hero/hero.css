@@ -1,0 +1,19 @@
+.hero-background {
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero .container {
+  color: #fff;
+}
+
+.hero h2,
+.hero p {
+  color: #fff;
+}
+
+.hero .hero-introduction {
+  max-width: 38rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
